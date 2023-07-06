@@ -28,7 +28,6 @@ const useCart = create(
             })
         },
         emptyCart: () => {
-            const { itemIndex } = params;
             set((state) => {
                 const newCart = []
                 return {
