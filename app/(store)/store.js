@@ -4,6 +4,15 @@ const useCart = create(
     (set, get) => ({
         cart: [],
         products: {},
+        setProducts: (params) => {
+            const newProduct = params;
+            set((state) => {
+                return {
+                    ...state,
+                    product: newProduct,
+                }
+            })
+        },
         addToCart: (params) => {
             const { newItem } = params;
             set((state) => {
@@ -37,3 +46,6 @@ const useCart = create(
             })
         }
     }))
+
+
+export default useCart;
