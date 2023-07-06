@@ -3,6 +3,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import useCart from '../(store)/store'
+import Image from 'next/image'
 export default function ProductCard(props) {
     const { product } = props
     const { id: price_id, unit_amount: cost_price, product: product_info } = product
