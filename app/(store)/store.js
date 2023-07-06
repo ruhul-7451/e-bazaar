@@ -4,7 +4,7 @@ const useCart = create(
     (set, get) => ({
         cart: [],
         products: {},
-        setProducts: (params) => {
+        setProduct: (params) => {
             const newProduct = params;
             set((state) => {
                 return {
